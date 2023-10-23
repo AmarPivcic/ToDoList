@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #0F0F0F;
+}
+
+.container{
+    background-color: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1000px;
+}
+
+.title{
+    color: white;
+    background-color: #005B41;
+    text-align: center;
+    width: 40%;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #0F0F0F;
+}
+
+h1{
+    color: white;
+}
+
+.listcontainer{
+    background-color: #232D3F;
+    border-radius: 5px;
+    text-align: center;
+    width: 40%;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.element{
+    color: #ffffff;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+
+.element input{
+    margin: 20px;
+}
+
+.element p{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.element2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element2 input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.newItem{
+    font-size: 22px;
+    border: none;
+    color: white;
+    background-color: #232D3F;
+    text-align: center;
+    width: 80%;
+    outline: none;
+}
+
+.submitButton{
+    background-color: #008170;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.header{
+    background-color: #005B41;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.navButton{
+    border: none;
+    background-color: #008170;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.deleteBtn{
+    border: none;
+    background-color: #008170;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.check:checked + p{
+    text-decoration: line-through #008170;
+}
+
+.footer{
+    text-align: center;
+    background-color: #005B41;
+    color: #0F0F0F;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media (max-width:850px)
+{
+    .title{
+        width: 80%;
+    }
+
+    .listcontainer{
+        width: 80%;
+    }
+
+    .navButton{
+        font-size: 16px;
+        border-radius: 5px;
+        width: 80px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .navTitle{
+        font-size: 20px;
+    }
+    
+}

@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+    <div class="container">
+        <div class="title">
+            <h1>Work List</h1>
+        </div>
+        <div class="listcontainer">
+            <% if (locals.elements) { %>
+                <% for (let i = 0; i < elements.length; i++) { %>
+                    <div class="element">
+                        <form action="/delete" method="POST" class="form">
+                            <input class="check" type="checkbox" >
+                            <p> <%= elements[i] %> </p>
+                            <input type="text" name="checkbox" value="<%= i%>" style="display: none;">
+                            <button class="deleteBtn">Delete</button>
+                        </form>
+                    </div>                     
+                <%}%>
+             <% }%>     
+            <form class="element2" action="/submit" method="post">
+                <input class="newItem" type="text" name="newItem" placeholder="New Item" autocomplete="off">
+                <button class="submitButton" type="submit" name="list">+</button>
+            </form>
+        </div>
+    </div>
+<%- include("partials/footer.ejs") %>
