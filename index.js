@@ -48,7 +48,7 @@ app.post("/submit", (req, res)=>{
 });
 
 app.post("/deleteday", (req, res) => {
-  var index = req.body["checkbox"];
+  var index = req.body.checkbox;
   var temp = [];
   for(var i = 0; i < day.length; i++)
   {
@@ -67,7 +67,7 @@ app.post("/deleteday", (req, res) => {
 });
 
 app.post("/delete", (req, res) => {
-  var index = req.body["checkbox"];
+  var index = req.body.checkbox.value;
   var temp = [];
   for(var i = 0; i < work.length; i++)
   {
@@ -78,9 +78,7 @@ app.post("/delete", (req, res) => {
   }
   work=temp;
   temp=[];
-  res.render("work.ejs", {
-    elements: work
-  })
+  res.redirect("/work")
 });
 
 
